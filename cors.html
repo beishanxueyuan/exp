@@ -13,7 +13,7 @@ url: </br><input id="url" name="url" type="text" style="width:500px;"/>
 function exp(){
 var url=document.getElementById("url").value;
 var body=document.getElementById("body").value;
-if(body=="false"){
+if(body==""){
 var code=`var req = new XMLHttpRequest();
    req.onload = reqListener;
    req.open('GET','${url}',true);
